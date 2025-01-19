@@ -3,54 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Edward Mundhluyi - Data Engineer and AI Specialist">
-  <title>Edward Mundhluyi - Portfolio</title>
+  <meta name="description" content="Edward Mundhluyi - Data Engineer and AI Specialist Portfolio">
+  <meta name="keywords" content="data engineer, AI specialist, Python, SQL, data pipelines">
+  <title>Edward Mundhluyi - Data Engineering & AI Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <h1>Edward Mundhluyi</h1>
-      <p>Data Engineer | AI Enthusiast | Problem Solver</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="hero-content">
+        <h1>Edward Mundhluyi</h1>
+        <div class="typewriter">
+          <p>Data Engineer | AI Specialist | Problem Solver</p>
+        </div>
+        <nav>
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+          <a href="#projects"><i class="fas fa-code-branch"></i> Projects</a>
+          <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <section id="about" class="section">
       <div class="container">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm Edward Mundhluyi, a certified data engineer and AI specialist with experience in 
-          building scalable data pipelines, optimizing database systems, and integrating AI to drive efficiency.
-        </p>
-        <p>
-          My work is guided by a passion for using data to solve real-world problems and help organizations 
-          make meaningful decisions. Let's explore my journey and projects.
-        </p>
+        <h2><i class="fas fa-user-circle"></i> About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="highlight">
+              Hi, I'm Edward Mundhluyi, a certified data engineer and AI specialist passionate about 
+              transforming data into actionable insights.
+            </p>
+            <p>
+              With expertise in building scalable data pipelines and implementing AI solutions, 
+              I help organizations leverage their data to make informed decisions and drive innovation.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <h2>Projects</h2>
+        <h2><i class="fas fa-laptop-code"></i> Featured Projects</h2>
         <div class="card-grid">
           <div class="card">
-            <h3>Conversational Data Profiler Chatbot</h3>
-            <p>Built a chatbot integrated with Flask to perform data profiling using `ydata_profiling` and SQL queries.</p>
+            <div class="card-header">
+              <i class="fas fa-robot"></i>
+              <h3>Conversational Data Profiler Chatbot</h3>
+            </div>
+            <div class="card-content">
+              <p>An intelligent chatbot integrated with Flask that performs advanced data profiling using ydata_profiling and SQL queries.</p>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">NLP</span>
+              </div>
+              <a href="#" class="card-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
+
           <div class="card">
-            <h3>Data Quality Dashboard</h3>
-            <p>Developed a Power BI dashboard to address data quality issues and improve client contactability.</p>
+            <div class="card-header">
+              <i class="fas fa-chart-line"></i>
+              <h3>Data Quality Dashboard</h3>
+            </div>
+            <div class="card-content">
+              <p>Interactive Power BI dashboard that monitors data quality metrics and improves client contactability through real-time analysis.</p>
+              <div class="card-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">SQL</span>
+              </div>
+              <a href="#" class="card-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
+
           <div class="card">
-            <h3>AI Tracker & Disease Recommender</h3>
-            <p>Created an interactive web app comparing diseases using regression models, SIR models, and economic impact analysis.</p>
+            <div class="card-header">
+              <i class="fas fa-virus"></i>
+              <h3>AI Tracker & Disease Recommender</h3>
+            </div>
+            <div class="card-content">
+              <p>Web application combining regression models and SIR modeling to analyze disease patterns and economic impact.</p>
+              <div class="card-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Python</span>
+                <span class="tag">Web Dev</span>
+              </div>
+              <a href="#" class="card-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -58,24 +117,24 @@
 
     <section id="skills" class="section">
       <div class="container">
-        <h2>Skills & Certifications</h2>
+        <h2><i class="fas fa-brain"></i> Skills & Certifications</h2>
         <div class="skills-grid">
-          <div>
-            <h3>Technical Skills</h3>
-            <ul>
-              <li>Python, SQL, Apache Spark</li>
-              <li>ETL, Data Warehousing, NoSQL</li>
-              <li>Power BI, Hive Ambari</li>
-              <li>Generative AI Tools</li>
+          <div class="skills-column">
+            <h3><i class="fas fa-code"></i> Technical Skills</h3>
+            <ul class="skills-list">
+              <li><i class="fas fa-check"></i> Python, SQL, Apache Spark</li>
+              <li><i class="fas fa-check"></i> ETL, Data Warehousing, NoSQL</li>
+              <li><i class="fas fa-check"></i> Power BI, Hive Ambari</li>
+              <li><i class="fas fa-check"></i> Generative AI Tools</li>
             </ul>
           </div>
-          <div>
-            <h3>Certifications</h3>
-            <ul>
-              <li>IBM Data Engineering Professional Certificate</li>
-              <li>Microsoft Azure AI Fundamentals</li>
-              <li>Google Project Management Certificate</li>
-              <li>McKinsey Forward Program</li>
+          <div class="skills-column">
+            <h3><i class="fas fa-certificate"></i> Certifications</h3>
+            <ul class="skills-list">
+              <li><i class="fas fa-award"></i> IBM Data Engineering Professional Certificate</li>
+              <li><i class="fas fa-award"></i> Microsoft Azure AI Fundamentals</li>
+              <li><i class="fas fa-award"></i> Google Project Management Certificate</li>
+              <li><i class="fas fa-award"></i> McKinsey Forward Program</li>
             </ul>
           </div>
         </div>
@@ -84,20 +143,36 @@
 
     <section id="contact" class="section">
       <div class="container">
-        <h2>Contact Me</h2>
-        <p>I'd love to connect! Feel free to reach out through any of the platforms below:</p>
-        <ul class="contact-list">
-          <li>Email: <a href="mailto:eddiemundhluyi@gmail.com">eddiemundhluyi@gmail.com</a></li>
-          <li>GitHub: <a href="https://github.com/KingExecutioner" target="_blank">@KingExecutioner</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/edward-mundhluyi-973920193" target="_blank">Edward Mundhluyi</a></li>
-        </ul>
+        <h2><i class="fas fa-paper-plane"></i> Let's Connect</h2>
+        <div class="contact-content">
+          <p class="contact-intro">Ready to collaborate or discuss opportunities? Reach out through any of these channels:</p>
+          <div class="contact-grid">
+            <a href="mailto:eddiemundhluyi@gmail.com" class="contact-card">
+              <i class="fas fa-envelope"></i>
+              <span>eddiemundhluyi@gmail.com</span>
+            </a>
+            <a href="https://github.com/KingExecutioner" target="_blank" class="contact-card">
+              <i class="fab fa-github"></i>
+              <span>@KingExecutioner</span>
+            </a>
+            <a href="https://www.linkedin.com/in/edward-mundhluyi-973920193" target="_blank" class="contact-card">
+              <i class="fab fa-linkedin"></i>
+              <span>Edward Mundhluyi</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Edward Mundhluyi | Built with ❤️ on GitHub Pages</p>
+      <p>&copy; 2025 Edward Mundhluyi | Built with <i class="fas fa-heart"></i> on GitHub Pages</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
   </footer>
 </body>
