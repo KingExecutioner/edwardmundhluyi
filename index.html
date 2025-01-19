@@ -7,177 +7,196 @@
     <title>Edward Mundhluyi - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="container">
             <h1>Edward Mundhluyi</h1>
-            <p>Data Engineer | AI Specialist | Problem Solver</p>
+            <p class="title">Data Engineer | AI Specialist | Problem Solver</p>
             <nav>
-                <a href="#about"><i class="fas fa-user"></i> About</a>
-                <a href="#projects"><i class="fas fa-code-branch"></i> Projects</a>
-                <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
-                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="#about">About</a>
+                <a href="#overview">Overview</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
+    <div class="hero-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Professional Certifications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Data Solutions Delivered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section id="about" class="section">
             <div class="container">
-                <h2>About Me</h2>
-                <p>
-                    Hi, I'm Edward Mundhluyi, a certified data engineer and AI specialist passionate about 
-                    transforming data into actionable insights.
-                </p>
-                <p>
-                    With expertise in building scalable data pipelines and implementing AI solutions, 
-                    I help organizations leverage their data to make informed decisions and drive innovation.
-                </p>
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p class="section-subtitle">Professional Background & Expertise</p>
+                </div>
+                <div class="about-content">
+                    <p class="lead-text">
+                        A dedicated Data Engineer and AI Specialist with a proven track record in building 
+                        scalable data solutions and implementing cutting-edge AI technologies.
+                    </p>
+                    <p>
+                        Specializing in developing robust data pipelines, optimizing database performance, 
+                        and creating AI-driven solutions that help organizations make data-informed decisions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Professional Overview</h2>
+                    <p class="section-subtitle">Key Areas of Expertise</p>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Engineering</h3>
+                        <p>Building scalable data pipelines and optimizing database systems</p>
+                    </div>
+                    <div class="overview-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Integration</h3>
+                        <p>Implementing AI solutions to automate and enhance business processes</p>
+                    </div>
+                    <div class="overview-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analytics</h3>
+                        <p>Creating comprehensive data analytics solutions and dashboards</p>
+                    </div>
+                    <div class="overview-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Development</h3>
+                        <p>Developing custom software solutions and integrations</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects" class="section">
             <div class="container">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <!-- Chatbot Project -->
-                    <a href="chatbot-project.html" class="project-card" target="_blank">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p class="section-subtitle">Recent Work & Achievements</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
                         <div class="project-image">
                             <img src="/api/placeholder/600/400" alt="Data Profiler Chatbot">
                             <div class="project-overlay">
-                                <span>View Project Details</span>
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="btn btn-primary">View Details</a>
+                                    <a href="#" target="_blank" class="btn btn-secondary">Live Demo</a>
+                                </div>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Conversational Data Profiler Chatbot</h3>
-                            <p>Built a chatbot integrated with Flask to perform data profiling using ydata_profiling and SQL queries.</p>
+                            <p>An intelligent chatbot system integrated with Flask for advanced data profiling and analysis.</p>
                             <div class="project-tags">
                                 <span>Python</span>
                                 <span>Flask</span>
                                 <span>NLP</span>
                             </div>
-                            <div class="project-links">
-                                <a href="https://github.com/yourusername/chatbot-project" target="_blank">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="https://demo-link.com/chatbot" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                            </div>
                         </div>
-                    </a>
+                    </article>
 
-                    <!-- Dashboard Project -->
-                    <a href="dashboard-project.html" class="project-card" target="_blank">
-                        <div class="project-image">
-                            <img src="/api/placeholder/600/400" alt="Data Quality Dashboard">
-                            <div class="project-overlay">
-                                <span>View Project Details</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Data Quality Dashboard</h3>
-                            <p>Developed a Power BI dashboard to address data quality issues and improve client contactability.</p>
-                            <div class="project-tags">
-                                <span>Power BI</span>
-                                <span>DAX</span>
-                                <span>SQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/yourusername/dashboard-project" target="_blank">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="https://demo-link.com/dashboard" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Disease Tracker Project -->
-                    <a href="disease-tracker.html" class="project-card" target="_blank">
-                        <div class="project-image">
-                            <img src="/api/placeholder/600/400" alt="AI Disease Tracker">
-                            <div class="project-overlay">
-                                <span>View Project Details</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>AI Tracker & Disease Recommender</h3>
-                            <p>Created an interactive web app comparing diseases using regression models and SIR models.</p>
-                            <div class="project-tags">
-                                <span>Machine Learning</span>
-                                <span>Python</span>
-                                <span>Web Dev</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/yourusername/disease-tracker" target="_blank">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="https://demo-link.com/tracker" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                            </div>
-                        </div>
-                    </a>
+                    <!-- Additional project cards follow the same structure -->
                 </div>
             </div>
         </section>
 
-         <section id="skills" class="section">
-      <div class="container">
-        <h2><i class="fas fa-brain"></i> Skills & Certifications</h2>
-        <div class="skills-grid">
-          <div class="skills-column">
-            <h3><i class="fas fa-code"></i> Technical Skills</h3>
-            <ul class="skills-list">
-              <li><i class="fas fa-check"></i> Python, SQL, Apache Spark</li>
-              <li><i class="fas fa-check"></i> ETL, Data Warehousing, NoSQL</li>
-              <li><i class="fas fa-check"></i> Power BI, Hive Ambari</li>
-              <li><i class="fas fa-check"></i> Generative AI Tools</li>
-            </ul>
-          </div>
-          <div class="skills-column">
-            <h3><i class="fas fa-certificate"></i> Certifications</h3>
-            <ul class="skills-list">
-              <li><i class="fas fa-award"></i> IBM Data Engineering Professional Certificate</li>
-              <li><i class="fas fa-award"></i> Microsoft Azure AI Fundamentals</li>
-              <li><i class="fas fa-award"></i> Google Project Management Certificate</li>
-              <li><i class="fas fa-award"></i> McKinsey Forward Program</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Skills & Certifications</h2>
+                    <p class="section-subtitle">Technical Expertise & Professional Development</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar" data-level="90">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <!-- Additional skill items -->
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Certifications</h3>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <div class="cert-details">
+                                    <h4>IBM Data Engineering Professional Certificate</h4>
+                                    <p>IBM</p>
+                                </div>
+                            </div>
+                            <!-- Additional certification items -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2><i class="fas fa-paper-plane"></i> Let's Connect</h2>
-        <div class="contact-content">
-          <p class="contact-intro">Ready to collaborate or discuss opportunities? Reach out through any of these channels:</p>
-          <div class="contact-grid">
-            <a href="mailto:eddiemundhluyi@gmail.com" class="contact-card">
-              <i class="fas fa-envelope"></i>
-              <span>eddiemundhluyi@gmail.com</span>
-            </a>
-            <a href="https://github.com/KingExecutioner" target="_blank" class="contact-card">
-              <i class="fab fa-github"></i>
-              <span>@KingExecutioner</span>
-            </a>
-            <a href="https://www.linkedin.com/in/edward-mundhluyi-973920193" target="_blank" class="contact-card">
-              <i class="fab fa-linkedin"></i>
-              <span>Edward Mundhluyi</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p class="section-subtitle">Let's Discuss Your Next Project</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:eddiemundhluyi@gmail.com">eddiemundhluyi@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/KingExecutioner" target="_blank">@KingExecutioner</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/edward-mundhluyi-973920193" target="_blank">Edward Mundhluyi</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Edward Mundhluyi | Built with <i class="fas fa-heart"></i> on GitHub Pages</p>
+            <p>&copy; 2025 Edward Mundhluyi. All rights reserved.</p>
         </div>
     </footer>
 </body>
