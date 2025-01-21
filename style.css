@@ -236,19 +236,18 @@ nav i {
   gap: 0.5rem;
 }
 
-.skills-list {
-  list-style: none;
+.skills-list strong {
+  color: #007acc;  /* Blue color for domain names */
+  font-weight: bold;
+  font-size: 1.1em;  /* Slightly larger font size */
 }
+
 
 .skills-list li {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-}
-
-.skills-list i {
-  color: var(--accent);
 }
 
 /* Contact section */
